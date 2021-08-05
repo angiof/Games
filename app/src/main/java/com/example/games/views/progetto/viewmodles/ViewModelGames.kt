@@ -32,8 +32,7 @@ class ViewModelGames(application: Application) : AndroidViewModel(application) {
                 }
 
                 override fun onFailure(call: Call<List<ResGames>>, t: Throwable) {
-                    //metodo di chiamate in caso di falle
-                    //metodo di chiamate in caso di falle
+                   //qui i commenti non servono
 
                 }
 
