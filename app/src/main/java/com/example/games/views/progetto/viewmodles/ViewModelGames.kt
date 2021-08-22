@@ -2,6 +2,7 @@ package com.example.games.views.progetto.viewmodles
 
 import ResGames
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import apirest.ClientRetro
@@ -33,6 +34,7 @@ class ViewModelGames(application: Application) : AndroidViewModel(application) {
 
                 override fun onFailure(call: Call<List<ResGames>>, t: Throwable) {
                    //qui i commenti non servono
+                    Log.d("tag","messaggio dal branch vecchio :) ")
 
                 }
 
