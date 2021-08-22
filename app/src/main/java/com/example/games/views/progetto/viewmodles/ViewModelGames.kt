@@ -34,7 +34,6 @@ class ViewModelGames(application: Application) : AndroidViewModel(application) {
 
                 override fun onFailure(call: Call<List<ResGames>>, t: Throwable) {
                    //qui i commenti non servono
-                    Log.d("tag","messaggio dal branch vecchio :) ")
 
                 }
 
