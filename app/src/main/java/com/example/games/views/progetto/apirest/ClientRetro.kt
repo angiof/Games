@@ -1,4 +1,4 @@
-package apirest
+package com.example.games.views.progetto.apirest
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

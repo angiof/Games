@@ -5,7 +5,7 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import apirest.ClientRetro
+import com.example.games.views.progetto.apirest.ClientRetro
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,11 +33,6 @@ class ViewModelGames(application: Application) : AndroidViewModel(application) {
                 }
 
                 override fun onFailure(call: Call<List<ResGames>>, t: Throwable) {
-                   //qui i commenti non servono
-                    Log.d("tag ramo2","tag ramo2")
-                    //questo è il secondo ramo con i commenti questi commenti
-                    //devono viaggiare verso il secondo branch
-                    Log.d("tag2 ramo2","tag ramo2")
 
 
 

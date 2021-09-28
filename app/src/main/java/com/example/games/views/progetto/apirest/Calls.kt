@@ -1,4 +1,4 @@
-package apirest
+package com.example.games.views.progetto.apirest
 
 import ResGames
 import retrofit2.Call

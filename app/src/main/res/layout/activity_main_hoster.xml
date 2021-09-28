@@ -16,6 +16,7 @@
             android:id="@+id/fragmentContainerView"
             android:name="com.example.games.views.progetto.frags.FragListaGamesHoster"
             android:layout_width="413dp"
+
             android:layout_height="688dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

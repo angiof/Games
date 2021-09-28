@@ -4,13 +4,14 @@ import ResGames
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.games.databinding.ListaItemsGamesTopBinding
 
-class AdapterTopGAmes(private val context: Context) :
+class AdapterTopGAmes(private val context: Context, private val onTapItemView: OnTapItemView) :
     ListAdapter<ResGames, AdapterTopGAmes.ViewHolder>(ItemsDiffCallback) {
 
 
@@ -38,5 +39,21 @@ class AdapterTopGAmes(private val context: Context) :
         holder.binding.tTitolo.text = entityConfig.title
         Glide.with(context).load(entityConfig.thumbnail).centerCrop().into(holder.binding.imageView)
 
+
+        holder.binding.cardView.setOnClickListener {
+
+            Toast.makeText(context, "toccato${entityConfig.title}", Toast.LENGTH_SHORT).show()
+
+            onTapItemView.sendToDestination(entityConfig)
+
+        }
+
+
     }
+
+    interface OnTapItemView {
+        fun sendToDestination(entityConfig: ResGames)
+    }
+
+
 }

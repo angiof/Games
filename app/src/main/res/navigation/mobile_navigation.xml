@@ -6,5 +6,26 @@
     app:startDestination="@+id/navigation_home">
 
 
-
+    <fragment
+        android:id="@+id/fragListaGamesHoster"
+        android:name="com.example.games.views.progetto.frags.FragListaGamesHoster"
+        android:label="fragment_frag_lista_games_hoster"
+        tools:layout="@layout/fragment_frag_lista_games_hoster" >
+        <action
+            android:id="@+id/action_fragListaGamesHoster_to_fragHosterGamesOnTap"
+            app:destination="@id/fragHosterGamesOnTap" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragHosterGamesOnTap"
+        android:name="com.example.games.FragHosterGamesOnTap"
+        android:label="fragment_frag_hoster_games_on_tap"
+        tools:layout="@layout/fragment_frag_hoster_games_on_tap" >
+        <argument
+            android:name="TitleFromGamesHOster"
+            app:argType="string"
+            android:defaultValue="titolo" />
+        <argument
+            android:name="Dettails"
+            app:argType="string" />
+    </fragment>
 </navigation>
